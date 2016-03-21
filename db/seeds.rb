@@ -6,9 +6,39 @@ City.where(name: "Denver").first_or_create
 City.where(name: "Seattle").first_or_create
 City.where(name: "Los Angeles").first_or_create
 City.where(name: "New York").first_or_create
+City.where(name: "London").first_or_create
+
+
+print "Adding attractions...\n"
+
+# Attractions: London
+
+Attraction.where(name: "British Museum", handle: "britishmuseum", user_id: "19066345", centroid_lat: 51.5194133, centroid_long: -0.1269566, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "National Gallery", handle: "NationalGallery", user_id: "137645230", centroid_lat: 51.5089323, centroid_long: -0.1304877, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Victoria and Albert Museum", handle: "V_and_A", user_id: "18807671", centroid_lat: 51.4966425, centroid_long: -0.1743687, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Tower of London", handle: "TowerOfLondon", user_id: "24449616", centroid_lat: 51.5081157, centroid_long: -0.078138, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Big Ben Clock", handle: "big_ben_clock", user_id: "86391789", centroid_lat: 51.5007325, centroid_long: -0.1268141, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Churchill War Rooms", handle: "I_W_M", user_id: "23742474", centroid_lat: 51.5022217, centroid_long: -0.1313937, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Houses of Parliament", handle: "visitparliament", user_id: "947953032", centroid_lat: 51.4996325, centroid_long: -0.1268363, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Natural History Museum", handle: "NHM_London", user_id: "35749264", centroid_lat: 51.4967183, centroid_long: -0.1785559, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "The Wallace Collection", handle: "WallaceMuseum", user_id: "19971012", centroid_lat: 51.517465, centroid_long: -0.1551593, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Westminster Abbey", handle: "wabbey", user_id: "20596231", centroid_lat: 51.4991869, centroid_long: -0.1296608, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Borough Market", handle: "boroughmarket", user_id: "423590219", centroid_lat: 51.5054946, centroid_long: -0.0931021, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "The London Eye", handle: "TheLondonEye", user_id: "22506910", centroid_lat: 51.5033273, centroid_long: -0.1217317, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Royal Albert Hall", handle: "RoyalAlbertHall", user_id: "76644398", centroid_lat: 51.5009088, centroid_long: -0.177366, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Up at the O2", handle: "TheO2", user_id: "18722606", centroid_lat: 51.5013422, centroid_long: 0.001564, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Royal Air Force Museum", handle: "RAFMUSEUM", user_id: "21250550", centroid_lat: 51.5978471, centroid_long: -0.2402796, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Royal Opera House", handle: "RoyalOperaHouse", user_id: "21079277", centroid_lat: 51.512924, centroid_long: -0.1243863, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Covent Garden", handle: "CoventGardenLDN", user_id: "80543233", centroid_lat: 51.5117446, centroid_long: -0.1320245, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "St. Paul's Catherdral", handle: "StPaulsLondon", user_id: "19702113", centroid_lat: 51.5138486, centroid_long: -0.1005393, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "National Portrait Gallery", handle: "NPGLondon", user_id: "89211580", centroid_lat: 51.5094269, centroid_long: -0.1303103, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Shakespeare's Globe Theater", handle: "The_Globe", user_id: "17898494", centroid_lat: 51.5080793, centroid_long: -0.0993827, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Buckingham Palace", handle: "BritishMonarchy", user_id: "36042554", centroid_lat: 51.5013673, centroid_long: -0.1440787, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Sky Garden", handle: "SG_SkyGarden", user_id: "1527747720", centroid_lat: 51.5111402, centroid_long: -0.0860752, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Old Royal Naval College", handle: "orncgreenwich", user_id: "359916429", centroid_lat: 51.4833533, centroid_long: -0.0078477, city: City.find_by(name:"London")).first_or_create
+Attraction.where(name: "Tower Bridge", handle: "TowerBridge", user_id: "300762634", centroid_lat: 51.5054597, centroid_long: -0.0775452, city: City.find_by(name:"London")).first_or_create
 
 # Attractions: Boston
-print "Adding attractions...\n"
 
 Attraction.where(name: "Museum of Fine Arts", handle: "mfaboston", user_id: "38213768", centroid_lat: 42.339381, centroid_long: -71.094048, city: City.find_by(name:"Boston")).first_or_create
 Attraction.where(name: "Fenway Park", handle: "fenwaypark", user_id: "3840475692", centroid_lat: 42.3466803, centroid_long: -71.0994065, city: City.find_by(name:"Boston")).first_or_create
@@ -154,127 +184,6 @@ Attraction.all.each do |attraction|
 		AttractionDay.where(attraction: attraction, day_number: day).first_or_create
 	end
 end
-
-# Tweets: RedRocksCo Denver
-print "Adding tweets...\n"
-# Tweet.where(twitter_snowflake: "684884247308414976", twitter_created_at: "Wed Jan 06 23:48:23 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684881358766800896", twitter_created_at: "Wed Jan 06 23:36:55 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684880404914950144", twitter_created_at: "Wed Jan 06 23:33:07 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684869005174157313", twitter_created_at: "Wed Jan 06 22:47:49 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684868457020567554", twitter_created_at: "Wed Jan 06 22:45:39 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684864150158372869", twitter_created_at: "Wed Jan 06 22:28:32 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684815715560484864", twitter_created_at: "Wed Jan 06 19:16:04 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684793931444273152", twitter_created_at: "Wed Jan 06 17:49:30 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684790810160795648", twitter_created_at: "Wed Jan 06 17:37:06 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684780766107156480", twitter_created_at: "Wed Jan 06 16:57:11 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684751854480175104", twitter_created_at: "Wed Jan 06 15:02:18 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684693620427984896", twitter_created_at: "Wed Jan 06 11:10:54 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684624932676964352", twitter_created_at: "Wed Jan 06 06:37:58 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684618155826745346", twitter_created_at: "Wed Jan 06 06:11:02 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684611581406232577", twitter_created_at: "Wed Jan 06 05:44:55 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684610621883584512", twitter_created_at: "Wed Jan 06 05:41:06 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684603402005954569", twitter_created_at: "Wed Jan 06 05:12:25 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684594229721591808", twitter_created_at: "Wed Jan 06 04:35:58 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684579850737172480", twitter_created_at: "Wed Jan 06 03:38:49 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684577674308628480", twitter_created_at: "Wed Jan 06 03:30:11 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684566156519161856", twitter_created_at: "Wed Jan 06 02:44:24 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684563291046187008", twitter_created_at: "Wed Jan 06 02:33:01 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684559924148305922", twitter_created_at: "Wed Jan 06 02:19:39 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684534639017521153", twitter_created_at: "Wed Jan 06 00:39:10 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684533607986118657", twitter_created_at: "Wed Jan 06 00:35:04 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684530618500186113", twitter_created_at: "Wed Jan 06 00:23:12 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 3).first_or_create
-# Tweet.where(twitter_snowflake: "684520651911118848", twitter_created_at: "Tue Jan 05 23:43:35 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684514200572407808", twitter_created_at: "Tue Jan 05 23:17:57 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684507898794262528", twitter_created_at: "Tue Jan 05 22:52:55 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684506234897088512", twitter_created_at: "Tue Jan 05 22:46:18 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684505647019208705", twitter_created_at: "Tue Jan 05 22:43:58 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684493886350307328", twitter_created_at: "Tue Jan 05 21:57:14 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684489465889452033", twitter_created_at: "Tue Jan 05 21:39:40 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684485445573423104", twitter_created_at: "Tue Jan 05 21:23:42 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684484917632188416", twitter_created_at: "Tue Jan 05 21:21:36 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684484723532382208", twitter_created_at: "Tue Jan 05 21:20:49 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684483446899515393", twitter_created_at: "Tue Jan 05 21:15:45 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684480850394648576", twitter_created_at: "Tue Jan 05 21:05:26 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684480183844257792", twitter_created_at: "Tue Jan 05 21:02:47 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684471362333872129", twitter_created_at: "Tue Jan 05 20:27:44 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684469873255251969", twitter_created_at: "Tue Jan 05 20:21:49 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684469347151024128", twitter_created_at: "Tue Jan 05 20:19:43 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684468983756505088", twitter_created_at: "Tue Jan 05 20:18:17 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684468733734027264", twitter_created_at: "Tue Jan 05 20:17:17 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684467852745687040", twitter_created_at: "Tue Jan 05 20:13:47 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684462732079316992", twitter_created_at: "Tue Jan 05 19:53:26 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684460367091765252", twitter_created_at: "Tue Jan 05 19:44:02 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684459807223369728", twitter_created_at: "Tue Jan 05 19:41:49 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684459058502303744", twitter_created_at: "Tue Jan 05 19:38:50 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684457764408590337", twitter_created_at: "Tue Jan 05 19:33:42 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684456890835705856", twitter_created_at: "Tue Jan 05 19:30:14 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684455583768948737", twitter_created_at: "Tue Jan 05 19:25:02 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684455129987153920", twitter_created_at: "Tue Jan 05 19:23:14 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684452860386349056", twitter_created_at: "Tue Jan 05 19:14:13 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684450885901152256", twitter_created_at: "Tue Jan 05 19:06:22 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684449467488059392", twitter_created_at: "Tue Jan 05 19:00:44 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684448891266179072", twitter_created_at: "Tue Jan 05 18:58:26 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684443402218246144", twitter_created_at: "Tue Jan 05 18:36:38 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684443057815617536", twitter_created_at: "Tue Jan 05 18:35:15 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684443025838358528", twitter_created_at: "Tue Jan 05 18:35:08 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684442853322428416", twitter_created_at: "Tue Jan 05 18:34:27 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684442779301343232", twitter_created_at: "Tue Jan 05 18:34:09 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684440117608615938", twitter_created_at: "Tue Jan 05 18:23:34 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684438749036556288", twitter_created_at: "Tue Jan 05 18:18:08 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684438284416716800", twitter_created_at: "Tue Jan 05 18:16:17 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684437195814498304", twitter_created_at: "Tue Jan 05 18:11:58 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684435907890397185", twitter_created_at: "Tue Jan 05 18:06:51 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684434445785509888", twitter_created_at: "Tue Jan 05 18:01:02 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684434423786397696", twitter_created_at: "Tue Jan 05 18:00:57 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684434164272238596", twitter_created_at: "Tue Jan 05 17:59:55 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684433415085527040", twitter_created_at: "Tue Jan 05 17:56:56 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684433236622184448", twitter_created_at: "Tue Jan 05 17:56:14 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684432969616994305", twitter_created_at: "Tue Jan 05 17:55:10 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684432824099684352", twitter_created_at: "Tue Jan 05 17:54:36 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684431929744068609", twitter_created_at: "Tue Jan 05 17:51:02 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684431812739919872", twitter_created_at: "Tue Jan 05 17:50:34 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684431763209334785", twitter_created_at: "Tue Jan 05 17:50:23 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684431542114856960", twitter_created_at: "Tue Jan 05 17:49:30 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684431507994218496", twitter_created_at: "Tue Jan 05 17:49:22 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684431214774759424", twitter_created_at: "Tue Jan 05 17:48:12 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684431039494799360", twitter_created_at: "Tue Jan 05 17:47:30 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684430800436236289", twitter_created_at: "Tue Jan 05 17:46:33 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684430782434152448", twitter_created_at: "Tue Jan 05 17:46:29 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "684430770010746880", twitter_created_at: "Tue Jan 05 17:46:26 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 2).first_or_create
-# Tweet.where(twitter_snowflake: "685211734160850944", twitter_created_at: "Thu Jan 07 21:29:42 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-# Tweet.where(twitter_snowflake: "685211555403837440", twitter_created_at: "Thu Jan 07 21:29:00 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-# Tweet.where(twitter_snowflake: "685211515348205568", twitter_created_at: "Thu Jan 07 21:28:50 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-# Tweet.where(twitter_snowflake: "685201260346122240", twitter_created_at: "Thu Jan 07 20:48:05 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-# Tweet.where(twitter_snowflake: "685201182436900864", twitter_created_at: "Thu Jan 07 20:47:46 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-# Tweet.where(twitter_snowflake: "685200967684378624", twitter_created_at: "Thu Jan 07 20:46:55 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-# Tweet.where(twitter_snowflake: "685191241689006081", twitter_created_at: "Thu Jan 07 20:08:16 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-# Tweet.where(twitter_snowflake: "685189935150821378", twitter_created_at: "Thu Jan 07 20:03:05 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-# Tweet.where(twitter_snowflake: "685155620782133248", twitter_created_at: "Thu Jan 07 17:46:44 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-# Tweet.where(twitter_snowflake: "685146898412380160", twitter_created_at: "Thu Jan 07 17:12:04 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-# Tweet.where(twitter_snowflake: "685136565748633600", twitter_created_at: "Thu Jan 07 16:31:01 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-# Tweet.where(twitter_snowflake: "685089963172495360", twitter_created_at: "Thu Jan 07 13:25:50 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-# Tweet.where(twitter_snowflake: "685079840123310080", twitter_created_at: "Thu Jan 07 12:45:36 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-# Tweet.where(twitter_snowflake: "684966927714811904", twitter_created_at: "Thu Jan 07 05:16:56 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-# Tweet.where(twitter_snowflake: "684904710650740736", twitter_created_at: "Thu Jan 07 01:09:42 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-# Tweet.where(twitter_snowflake: "684902118453477376", twitter_created_at: "Thu Jan 07 00:59:24 +0000 2016", attraction: Attraction.find_by(handle:"RedRocksCo"), day_number: 4).first_or_create
-
-# # # Tweets: RiNoArt Denver
-
-# Tweet.where(twitter_snowflake: "685563072598028289", twitter_created_at: "Fri Jan 08 20:45:48 +0000 2016", attraction: Attraction.find_by(handle:"RiNoArt"), day_number: 5).first_or_create
-# Tweet.where(twitter_snowflake: "685566559717163008", twitter_created_at: "Fri Jan 08 20:59:39 +0000 2016", attraction: Attraction.find_by(handle:"RiNoArt"), day_number: 5).first_or_create
-# Tweet.where(twitter_snowflake: "685585014768074752", twitter_created_at: "Fri Jan 08 22:12:59 +0000 2016", attraction: Attraction.find_by(handle:"RiNoArt"), day_number: 5).first_or_create
-# Tweet.where(twitter_snowflake: "686522278822068225", twitter_created_at: "Mon Jan 11 12:17:20 +0000 2016", attraction: Attraction.find_by(handle:"RiNoArt"), day_number: 1).first_or_create
-# Tweet.where(twitter_snowflake: "686576651208019973", twitter_created_at: "Mon Jan 11 15:53:24 +0000 2016", attraction: Attraction.find_by(handle:"RiNoArt"), day_number: 1).first_or_create
-# Tweet.where(twitter_snowflake: "686631162572181505", twitter_created_at: "Mon Jan 11 19:30:00 +0000 2016", attraction: Attraction.find_by(handle:"RiNoArt"), day_number: 1).first_or_create
-# Tweet.where(twitter_snowflake: "686636767676612608", twitter_created_at: "Mon Jan 11 19:52:17 +0000 2016", attraction: Attraction.find_by(handle:"RiNoArt"), day_number: 1).first_or_create
-# Tweet.where(twitter_snowflake: "686648315383910405", twitter_created_at: "Mon Jan 11 20:38:10 +0000 2016", attraction: Attraction.find_by(handle:"RiNoArt"), day_number: 1).first_or_create
-# Tweet.where(twitter_snowflake: "686648898786430976", twitter_created_at: "Mon Jan 11 20:40:29 +0000 2016", attraction: Attraction.find_by(handle:"RiNoArt"), day_number: 1).first_or_create
-# Tweet.where(twitter_snowflake: "685620764448436224", twitter_created_at: "Sat Jan 09 00:35:03 +0000 2016", attraction: Attraction.find_by(handle:"RiNoArt"), day_number: 5).first_or_create
-# Tweet.where(twitter_snowflake: "685623433841872896", twitter_created_at: "Sat Jan 09 00:45:39 +0000 2016", attraction: Attraction.find_by(handle:"RiNoArt"), day_number: 5).first_or_create
-# Tweet.where(twitter_snowflake: "685629117530685440", twitter_created_at: "Sat Jan 09 01:08:14 +0000 2016", attraction: Attraction.find_by(handle:"RiNoArt"), day_number: 5).first_or_create
-# Tweet.where(twitter_snowflake: "685629258497015808", twitter_created_at: "Sun Jan 10 01:08:48 +0000 2016", attraction: Attraction.find_by(handle:"RiNoArt"), day_number: 6).first_or_create
-# Tweet.where(twitter_snowflake: "686090824367603712", twitter_created_at: "Sun Jan 10 07:42:54 +0000 2016", attraction: Attraction.find_by(handle:"RiNoArt"), day_number: 6).first_or_create
-# Tweet.where(twitter_snowflake: "686259592372682752", twitter_created_at: "Mon Jan 11 18:53:31 +0000 2016", attraction: Attraction.find_by(handle:"RiNoArt"), day_number: 1).first_or_create
 
 # Interests: All
 print "Adding interests...\n"

@@ -7,9 +7,93 @@ City.where(name: "Seattle").first_or_create
 City.where(name: "Los Angeles").first_or_create
 City.where(name: "New York").first_or_create
 City.where(name: "London").first_or_create
+City.where(name: "Tokyo").first_or_create
+City.where(name: "Sao Paulo").first_or_create
+City.where(name: "Sydney").first_or_create
 
 
 print "Adding attractions...\n"
+
+# Attractions: Sydney
+
+Attraction.where(name: "Sydney Opera House", handle: "sydoperahouse", user_id: "90300296", centroid_lat: -33.85692, centroid_long: 151.215246, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Royal Botanic Garden", handle: "RBGSydney", user_id: "96283324", centroid_lat: -33.868984, centroid_long: 151.216145, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "The Rocks", handle: "therocks", user_id: "36553681", centroid_lat: -33.859616, centroid_long: 151.208654, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Manly Beach", handle: "ManlyAustralia", user_id: "29387910", centroid_lat: -33.792166, centroid_long: 151.287521, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Art Gallery of NSW", handle: "ArtGalleryofNSW", user_id: "32305202", centroid_lat: -33.868996, centroid_long: 151.217356, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Darling Harbour", handle: "DarlingHarbour", user_id: "36554057", centroid_lat: -33.871101, centroid_long: 151.199093, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "National Maritime Museum", handle: "anmmuseum", user_id: "150507745", centroid_lat: -33.86952, centroid_long: 151.198613, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Bondi Beach", handle: "sydney_sider", user_id: "17180384", centroid_lat: -33.891657, centroid_long: 151.276689, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Capitol Theater", handle: "CapitolSydney", user_id: "131067657", centroid_lat: -33.879443, centroid_long: 151.206238, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Sydney Aquarium", handle: "Sydney_Aquarium", user_id: "36650082", centroid_lat: -33.869124, centroid_long: 151.201993, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Museum of Contemporary Art", handle: "mca_australia", user_id: "22077850", centroid_lat: -33.860091, centroid_long: 151.209126, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Cockatoo Island", handle: "CockatooIsland", user_id: "239149462", centroid_lat: -33.847151, centroid_long: 151.172016, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Sydney Living Museums", handle: "sydlivmus", user_id: "180609701", centroid_lat: -33.860099, centroid_long: 151.20742, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Sydney Cricket Grounds", handle: "scg", user_id: "480976350", centroid_lat: -33.891715, centroid_long: 151.224852, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "White Rabbit Gallery", handle: "whiterabbitsyd", user_id: "33166676", centroid_lat: -33.886553, centroid_long: 151.200199, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Hayden Orpheum", handle: "haydenorpheum", user_id: "60818222", centroid_lat: -33.828165, centroid_long: 151.229797, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Barangaroo Reserve", handle: "barangaroo", user_id: "86174548", centroid_lat: -33.857228, centroid_long: 151.20106, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Sydney Theater Co", handle: "SydneyTheatreCo", user_id: "31745447", centroid_lat: -33.85577, centroid_long: 151.206037, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Sydeny Festival", handle: "sydney_festival", user_id: "22711711", centroid_lat: -33.8572, centroid_long: 151.208733, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Harbour Bridge Climb", handle: "bridgeclimb", user_id: "131730684", centroid_lat: -33.852313, centroid_long: 151.210723, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Taronga Zoo", handle: "tarongazoo", user_id: "17773366", centroid_lat: -33.843026, centroid_long: 151.241896, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Vivid Sydney", handle: "VividSydney", user_id: "126234787", centroid_lat: -33.854745, centroid_long: 151.209604, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Luna Park", handle: "lunaparksydney", user_id: "", centroid_lat: -33.847877, centroid_long: 151.209656, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Gastro Park", handle: "Gastropark", user_id: "", centroid_lat: -33.873835, centroid_long: 151.224393, city: City.find_by(name:"Sydney")).first_or_create
+Attraction.where(name: "Centennial Park", handle: "centparklands", user_id: "", centroid_lat: -33.89521, centroid_long: 151.233046, city: City.find_by(name:"Sydney")).first_or_create
+
+# Attractions: Sao Paulo
+
+Attraction.where(name: "Museu de Arte de São Paulo", handle: "maspmuseu", user_id: "39820179", centroid_lat: -23.561486, centroid_long: -46.655944, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Pinacoteca do Estado", handle: "MuseuPinacoteca", user_id: "85665906", centroid_lat: -23.534267, centroid_long: -46.633925, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Parque do Ibirapuera", handle: "ibira67", user_id: "147087594", centroid_lat: -23.587416, centroid_long: -46.657634, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Theatro Municipal", handle: "municipalsp", user_id: "87696996", centroid_lat: -23.545253, centroid_long: -46.638686, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Museu do Futebol", handle: "museudofutebol", user_id: "188454784", centroid_lat: -23.5475808, centroid_long: -46.6671109, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Museu Afro Brasil", handle: "museuafrobrasil", user_id: "121186884", centroid_lat: -23.5841813, centroid_long: -46.6616392, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Centro Cultural SP", handle: "centrocultural", user_id: "16637740", centroid_lat: -23.5711724, centroid_long: -46.6424031, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Allianz Parque", handle: "AllianzParque", user_id: "272102958", centroid_lat: -23.5275819, centroid_long: -46.6806575, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Museu da Imagem e do Som", handle: "mis_sp", user_id: "36246186", centroid_lat: -23.5728051, centroid_long: -46.6783267, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Auditório Ibirapuera", handle: "audibira", user_id: "45978332", centroid_lat: -23.5855882, centroid_long: -46.6588091, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Arena Corinthians", handle: "A_Corinthians", user_id: "2692974816", centroid_lat: -23.5453172, centroid_long: -46.4764563, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Museu Paulista", handle: "museupaulista", user_id: "126047753", centroid_lat: -23.5855731, centroid_long: -46.6118677, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Autódromo de Interlagos", handle: "InterlagosTrack", user_id: "716238475", centroid_lat: -23.7011801, centroid_long: -46.7001431, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Galeria do Rock", handle: "galeriadorock", user_id: "37097199", centroid_lat: -23.5442461, centroid_long: -46.6414537, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Memorial da América Latina", handle: "hablamemorial", user_id: "39603708", centroid_lat: -23.5267648, centroid_long: -46.66648, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Jardim Botânico", handle: "ambientesp", user_id: "41821990", centroid_lat: -23.641255, centroid_long: -46.6290886, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "SESC Pompeia", handle: "sescpompeia", user_id: "65750547", centroid_lat: -23.525772, centroid_long: -46.6857764, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Instituto Butantan", handle: "Butantan", user_id: "25087917", centroid_lat: -23.566328, centroid_long: -46.7208174, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Casa das Rosas", handle: "casadasrosas", user_id: "35540575", centroid_lat: -23.5711361, centroid_long: -46.6473957, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Museu de Arte Moderna", handle: "mamoficial", user_id: "82609596", centroid_lat: -23.5878284, centroid_long: -46.6578409, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Anhembi Parque", handle: "anhembiparque", user_id: "60686096", centroid_lat: -23.5157668, centroid_long: -46.6471408, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Universidade de São Paulo", handle: "usponline", user_id: "24241923", centroid_lat: -23.5613942, centroid_long: -46.7329778, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Biblioteca de SP", handle: "BSPbiblioteca", user_id: "113679932", centroid_lat: -23.5072161, centroid_long: -46.6255257, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "CineSesc", handle: "cinesesc_sp", user_id: "82163945", centroid_lat: -23.5604824, centroid_long: -46.6645521, city: City.find_by(name:"Sao Paulo")).first_or_create
+Attraction.where(name: "Centro Cultural Banco do Brasil", handle: "CCBB_SP", user_id: "19406393", centroid_lat: -23.5474898, centroid_long: -46.6368006, city: City.find_by(name:"Sao Paulo")).first_or_create
+
+# Attractions: Tokyo
+
+Attraction.where(name: "Sea Paradise", handle: "_seaparadise_", user_id: "579452660", centroid_lat: 35.336588, centroid_long: 139.644753, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Tokyo City View", handle: "tokyo_cityview", user_id: "203017124", centroid_lat: 35.6600711, centroid_long: 139.7290686, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Universal Studios Japan", handle: "USJ_Official", user_id: "191004170", centroid_lat: 34.665442, centroid_long: 135.4323382, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Space World", handle: "SpaceWorld_info", user_id: "980140230", centroid_lat: 33.873601, centroid_long: 130.811851, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Tokyo DisneyLand", handle: "TDR_PR", user_id: "346393965", centroid_lat: 35.6329007, centroid_long: 139.8782056, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Suzuka Circuit", handle: "suzuka_event", user_id: "122877975", centroid_lat: 34.8455979, centroid_long: 136.5367635, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Yomiuri Land", handle: "yomiuriland_com", user_id: "354736890", centroid_lat: 35.6147723, centroid_long: 139.5259613, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Tokyo Metropolitan Government Building", handle: "tocho_tenbou", user_id: "2359150620", centroid_lat: 35.6892506, centroid_long: 139.6896666, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Huisten Bosch", handle: "HTB_official", user_id: "114682134", centroid_lat: 33.0863521, centroid_long: 129.7850302, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Yoyogi Park", handle: "ParksYoyogi", user_id: "1138998301", centroid_lat: 35.6717403, centroid_long: 139.692756, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Ueno Zoo", handle: "UenoZooGardens", user_id: "1156713230", centroid_lat: 35.7154908, centroid_long: 139.7679488, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Hirakata Park", handle: "hirapar_pr", user_id: "1086212880", centroid_lat: 34.8080146, centroid_long: 135.637701, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Tama Zoo", handle: "TamaZooPark", user_id: "1156726849", centroid_lat: 35.6499689, centroid_long: 139.3970204, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Mori Art Museum", handle: "mori_art_museum", user_id: "83088776", centroid_lat: 35.6603935, centroid_long: 139.7270935, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Kasai Aquarium", handle: "KasaiSuizokuen", user_id: "1156728812", centroid_lat: 35.6399989, centroid_long: 139.8600307, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Hara Museum", handle: "haramuseum", user_id: "187820250", centroid_lat: 35.6209071, centroid_long: 139.7338522, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Mito Art Tower", handle: "art_tower_mito", user_id: "306144291", centroid_lat: 36.3804142, centroid_long: 140.4636194, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Pola Museum of Art", handle: "polamuseumofart", user_id: "131168190", centroid_lat: 35.2567252, centroid_long: 139.0190578, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Enoshima Aquarium", handle: "enosui_com", user_id: "77883873", centroid_lat: 35.3092064, centroid_long: 139.4780403, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Fukushima Prefecture", handle: "Fukushima_Pref", user_id: "132100311", centroid_lat: 37.3838074, centroid_long: 139.5450167, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Nagano Prefecture", handle: "NaganoPref", user_id: "266306902", centroid_lat: 36.1114177, centroid_long: 136.9108381, city: City.find_by(name:"Tokyo")).first_or_create
+Attraction.where(name: "Toba Aquarium", handle: "TOBA_AQUARIUM", user_id: "437332642", centroid_lat: 34.4815424, centroid_long: 136.8435923, city: City.find_by(name:"Tokyo")).first_or_create
 
 # Attractions: London
 
@@ -241,7 +325,6 @@ Interest.where(name: "Italy").first_or_create
 Interest.where(name: "Japan").first_or_create
 Interest.where(name: "Mexico/Central America").first_or_create
 Interest.where(name: "South America").first_or_create
-Interest.where(name: "United Kingdom").first_or_create
 Interest.where(name: "Las Vegas").first_or_create
 Interest.where(name: "Hawaii").first_or_create
 Interest.where(name: "Luxury travel").first_or_create
@@ -1405,5 +1488,590 @@ AttractionAudienceInterest.where(interest: Interest.find_by(name:"Europe"), perc
 AttractionAudienceInterest.where(interest: Interest.find_by(name:"Hotels"), percentage:4, attraction: Attraction.find_by(handle:"WallaceMuseum")).first_or_create
 AttractionAudienceInterest.where(interest: Interest.find_by(name:"Luxury travel"), percentage:4, attraction: Attraction.find_by(handle:"WallaceMuseum")).first_or_create
 AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:18, attraction: Attraction.find_by(handle:"WallaceMuseum")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:10, attraction: Attraction.find_by(handle:"_seaparadise_")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:10, attraction: Attraction.find_by(handle:"_seaparadise_")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cartoons"), percentage:6, attraction: Attraction.find_by(handle:"_seaparadise_")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:5, attraction: Attraction.find_by(handle:"_seaparadise_")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:43, attraction: Attraction.find_by(handle:"_seaparadise_")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Exercise/fitness"), percentage:4, attraction: Attraction.find_by(handle:"_seaparadise_")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:28, attraction: Attraction.find_by(handle:"_seaparadise_")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:21, attraction: Attraction.find_by(handle:"_seaparadise_")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:14, attraction: Attraction.find_by(handle:"_seaparadise_")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:41, attraction: Attraction.find_by(handle:"_seaparadise_")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:29, attraction: Attraction.find_by(handle:"_seaparadise_")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:17, attraction: Attraction.find_by(handle:"_seaparadise_")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Traveling with kids"), percentage:3, attraction: Attraction.find_by(handle:"_seaparadise_")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:48, attraction: Attraction.find_by(handle:"art_tower_mito")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:4, attraction: Attraction.find_by(handle:"art_tower_mito")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cartoons"), percentage:8, attraction: Attraction.find_by(handle:"art_tower_mito")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:3, attraction: Attraction.find_by(handle:"art_tower_mito")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:29, attraction: Attraction.find_by(handle:"art_tower_mito")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:27, attraction: Attraction.find_by(handle:"art_tower_mito")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Drawing/sketching"), percentage:3, attraction: Attraction.find_by(handle:"art_tower_mito")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:8, attraction: Attraction.find_by(handle:"art_tower_mito")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:9, attraction: Attraction.find_by(handle:"art_tower_mito")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:11, attraction: Attraction.find_by(handle:"art_tower_mito")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:24, attraction: Attraction.find_by(handle:"art_tower_mito")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:5, attraction: Attraction.find_by(handle:"art_tower_mito")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:36, attraction: Attraction.find_by(handle:"art_tower_mito")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Hotels"), percentage:4, attraction: Attraction.find_by(handle:"art_tower_mito")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:12, attraction: Attraction.find_by(handle:"art_tower_mito")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:10, attraction: Attraction.find_by(handle:"enosui_com")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:12, attraction: Attraction.find_by(handle:"enosui_com")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cartoons"), percentage:4, attraction: Attraction.find_by(handle:"enosui_com")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:4, attraction: Attraction.find_by(handle:"enosui_com")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:46, attraction: Attraction.find_by(handle:"enosui_com")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Exercise/fitness"), percentage:6, attraction: Attraction.find_by(handle:"enosui_com")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Freelance writing"), percentage:3, attraction: Attraction.find_by(handle:"enosui_com")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:34, attraction: Attraction.find_by(handle:"enosui_com")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:25, attraction: Attraction.find_by(handle:"enosui_com")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:8, attraction: Attraction.find_by(handle:"enosui_com")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:39, attraction: Attraction.find_by(handle:"enosui_com")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:30, attraction: Attraction.find_by(handle:"enosui_com")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:25, attraction: Attraction.find_by(handle:"enosui_com")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Traveling with kids"), percentage:3, attraction: Attraction.find_by(handle:"enosui_com")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:4, attraction: Attraction.find_by(handle:"Fukushima_Pref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:6, attraction: Attraction.find_by(handle:"Fukushima_Pref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cartoons"), percentage:3, attraction: Attraction.find_by(handle:"Fukushima_Pref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:42, attraction: Attraction.find_by(handle:"Fukushima_Pref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Exercise/fitness"), percentage:6, attraction: Attraction.find_by(handle:"Fukushima_Pref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:23, attraction: Attraction.find_by(handle:"Fukushima_Pref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:6, attraction: Attraction.find_by(handle:"Fukushima_Pref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:5, attraction: Attraction.find_by(handle:"Fukushima_Pref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:37, attraction: Attraction.find_by(handle:"Fukushima_Pref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:3, attraction: Attraction.find_by(handle:"Fukushima_Pref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:9, attraction: Attraction.find_by(handle:"Fukushima_Pref")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:75, attraction: Attraction.find_by(handle:"haramuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:4, attraction: Attraction.find_by(handle:"haramuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cartoons"), percentage:12, attraction: Attraction.find_by(handle:"haramuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:3, attraction: Attraction.find_by(handle:"haramuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:44, attraction: Attraction.find_by(handle:"haramuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:10, attraction: Attraction.find_by(handle:"haramuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Exercise/fitness"), percentage:4, attraction: Attraction.find_by(handle:"haramuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Freelance writing"), percentage:9, attraction: Attraction.find_by(handle:"haramuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:34, attraction: Attraction.find_by(handle:"haramuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:33, attraction: Attraction.find_by(handle:"haramuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:18, attraction: Attraction.find_by(handle:"haramuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:6, attraction: Attraction.find_by(handle:"haramuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:3, attraction: Attraction.find_by(handle:"haramuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:5, attraction: Attraction.find_by(handle:"haramuseum")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:5, attraction: Attraction.find_by(handle:"hirapar_pr")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:6, attraction: Attraction.find_by(handle:"hirapar_pr")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cartoons"), percentage:8, attraction: Attraction.find_by(handle:"hirapar_pr")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:5, attraction: Attraction.find_by(handle:"hirapar_pr")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:33, attraction: Attraction.find_by(handle:"hirapar_pr")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Exercise/fitness"), percentage:5, attraction: Attraction.find_by(handle:"hirapar_pr")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:16, attraction: Attraction.find_by(handle:"hirapar_pr")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:17, attraction: Attraction.find_by(handle:"hirapar_pr")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:19, attraction: Attraction.find_by(handle:"hirapar_pr")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:34, attraction: Attraction.find_by(handle:"hirapar_pr")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:28, attraction: Attraction.find_by(handle:"hirapar_pr")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:11, attraction: Attraction.find_by(handle:"hirapar_pr")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:7, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:6, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cartoons"), percentage:6, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:12, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:36, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:3, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Exercise/fitness"), percentage:5, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:17, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:14, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:12, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:45, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:5, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Asia"), percentage:6, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Hotels"), percentage:4, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:19, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:19, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Traveling with kids"), percentage:4, attraction: Attraction.find_by(handle:"HTB_official")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:13, attraction: Attraction.find_by(handle:"KasaiSuizokuen")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:8, attraction: Attraction.find_by(handle:"KasaiSuizokuen")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cartoons"), percentage:6, attraction: Attraction.find_by(handle:"KasaiSuizokuen")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:49, attraction: Attraction.find_by(handle:"KasaiSuizokuen")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Exercise/fitness"), percentage:9, attraction: Attraction.find_by(handle:"KasaiSuizokuen")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Freelance writing"), percentage:13, attraction: Attraction.find_by(handle:"KasaiSuizokuen")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:41, attraction: Attraction.find_by(handle:"KasaiSuizokuen")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:26, attraction: Attraction.find_by(handle:"KasaiSuizokuen")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:3, attraction: Attraction.find_by(handle:"KasaiSuizokuen")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:24, attraction: Attraction.find_by(handle:"KasaiSuizokuen")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:6, attraction: Attraction.find_by(handle:"KasaiSuizokuen")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:12, attraction: Attraction.find_by(handle:"KasaiSuizokuen")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:11, attraction: Attraction.find_by(handle:"KasaiSuizokuen")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:75, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:6, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cartoons"), percentage:14, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:4, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:39, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:14, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Exercise/fitness"), percentage:3, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Freelance writing"), percentage:8, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:28, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:4, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:4, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:34, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:19, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:5, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:4, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:5, attraction: Attraction.find_by(handle:"mori_art_museum")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:3, attraction: Attraction.find_by(handle:"NaganoPref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:5, attraction: Attraction.find_by(handle:"NaganoPref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:41, attraction: Attraction.find_by(handle:"NaganoPref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Exercise/fitness"), percentage:5, attraction: Attraction.find_by(handle:"NaganoPref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Freelance writing"), percentage:4, attraction: Attraction.find_by(handle:"NaganoPref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:19, attraction: Attraction.find_by(handle:"NaganoPref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:7, attraction: Attraction.find_by(handle:"NaganoPref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:8, attraction: Attraction.find_by(handle:"NaganoPref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:37, attraction: Attraction.find_by(handle:"NaganoPref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Hotels"), percentage:4, attraction: Attraction.find_by(handle:"NaganoPref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:6, attraction: Attraction.find_by(handle:"NaganoPref")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:12, attraction: Attraction.find_by(handle:"NaganoPref")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:71, attraction: Attraction.find_by(handle:"polamuseumofart")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cartoons"), percentage:11, attraction: Attraction.find_by(handle:"polamuseumofart")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:5, attraction: Attraction.find_by(handle:"polamuseumofart")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:25, attraction: Attraction.find_by(handle:"polamuseumofart")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:37, attraction: Attraction.find_by(handle:"polamuseumofart")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Drawing/sketching"), percentage:4, attraction: Attraction.find_by(handle:"polamuseumofart")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:7, attraction: Attraction.find_by(handle:"polamuseumofart")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:12, attraction: Attraction.find_by(handle:"polamuseumofart")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:12, attraction: Attraction.find_by(handle:"polamuseumofart")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:42, attraction: Attraction.find_by(handle:"polamuseumofart")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:36, attraction: Attraction.find_by(handle:"polamuseumofart")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:4, attraction: Attraction.find_by(handle:"polamuseumofart")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Hotels"), percentage:6, attraction: Attraction.find_by(handle:"polamuseumofart")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:16, attraction: Attraction.find_by(handle:"polamuseumofart")).first_or_create
+
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:33, attraction: Attraction.find_by(handle:"suzuka_event")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Exercise/fitness"), percentage:7, attraction: Attraction.find_by(handle:"suzuka_event")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:22, attraction: Attraction.find_by(handle:"suzuka_event")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:18, attraction: Attraction.find_by(handle:"suzuka_event")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:5, attraction: Attraction.find_by(handle:"suzuka_event")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:12, attraction: Attraction.find_by(handle:"TamaZooPark")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:7, attraction: Attraction.find_by(handle:"TamaZooPark")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cartoons"), percentage:6, attraction: Attraction.find_by(handle:"TamaZooPark")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:48, attraction: Attraction.find_by(handle:"TamaZooPark")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Exercise/fitness"), percentage:9, attraction: Attraction.find_by(handle:"TamaZooPark")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Freelance writing"), percentage:11, attraction: Attraction.find_by(handle:"TamaZooPark")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:39, attraction: Attraction.find_by(handle:"TamaZooPark")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:31, attraction: Attraction.find_by(handle:"TamaZooPark")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:4, attraction: Attraction.find_by(handle:"TamaZooPark")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:25, attraction: Attraction.find_by(handle:"TamaZooPark")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:5, attraction: Attraction.find_by(handle:"TamaZooPark")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:13, attraction: Attraction.find_by(handle:"TamaZooPark")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:12, attraction: Attraction.find_by(handle:"TamaZooPark")).first_or_create
+
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:18, attraction: Attraction.find_by(handle:"TDR_PR")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cartoons"), percentage:4, attraction: Attraction.find_by(handle:"TDR_PR")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:11, attraction: Attraction.find_by(handle:"TDR_PR")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:36, attraction: Attraction.find_by(handle:"TDR_PR")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:23, attraction: Attraction.find_by(handle:"TDR_PR")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:24, attraction: Attraction.find_by(handle:"TDR_PR")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:19, attraction: Attraction.find_by(handle:"TDR_PR")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:42, attraction: Attraction.find_by(handle:"TDR_PR")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:8, attraction: Attraction.find_by(handle:"TOBA_AQUARIUM")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:5, attraction: Attraction.find_by(handle:"TOBA_AQUARIUM")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cartoons"), percentage:6, attraction: Attraction.find_by(handle:"TOBA_AQUARIUM")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:3, attraction: Attraction.find_by(handle:"TOBA_AQUARIUM")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:36, attraction: Attraction.find_by(handle:"TOBA_AQUARIUM")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:3, attraction: Attraction.find_by(handle:"TOBA_AQUARIUM")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Exercise/fitness"), percentage:4, attraction: Attraction.find_by(handle:"TOBA_AQUARIUM")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:16, attraction: Attraction.find_by(handle:"TOBA_AQUARIUM")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:38, attraction: Attraction.find_by(handle:"TOBA_AQUARIUM")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:15, attraction: Attraction.find_by(handle:"TOBA_AQUARIUM")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:39, attraction: Attraction.find_by(handle:"TOBA_AQUARIUM")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:3, attraction: Attraction.find_by(handle:"TOBA_AQUARIUM")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Hotels"), percentage:4, attraction: Attraction.find_by(handle:"TOBA_AQUARIUM")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:21, attraction: Attraction.find_by(handle:"TOBA_AQUARIUM")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:19, attraction: Attraction.find_by(handle:"TOBA_AQUARIUM")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:12, attraction: Attraction.find_by(handle:"tokyo_cityview")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:7, attraction: Attraction.find_by(handle:"tokyo_cityview")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cartoons"), percentage:6, attraction: Attraction.find_by(handle:"tokyo_cityview")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:8, attraction: Attraction.find_by(handle:"tokyo_cityview")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:35, attraction: Attraction.find_by(handle:"tokyo_cityview")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:9, attraction: Attraction.find_by(handle:"tokyo_cityview")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:13, attraction: Attraction.find_by(handle:"tokyo_cityview")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:8, attraction: Attraction.find_by(handle:"tokyo_cityview")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:9, attraction: Attraction.find_by(handle:"tokyo_cityview")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:46, attraction: Attraction.find_by(handle:"tokyo_cityview")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:5, attraction: Attraction.find_by(handle:"tokyo_cityview")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:7, attraction: Attraction.find_by(handle:"tokyo_cityview")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:14, attraction: Attraction.find_by(handle:"tokyo_cityview")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:11, attraction: Attraction.find_by(handle:"UenoZooGardens")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:8, attraction: Attraction.find_by(handle:"UenoZooGardens")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cartoons"), percentage:6, attraction: Attraction.find_by(handle:"UenoZooGardens")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:3, attraction: Attraction.find_by(handle:"UenoZooGardens")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:46, attraction: Attraction.find_by(handle:"UenoZooGardens")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Exercise/fitness"), percentage:7, attraction: Attraction.find_by(handle:"UenoZooGardens")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Freelance writing"), percentage:8, attraction: Attraction.find_by(handle:"UenoZooGardens")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:33, attraction: Attraction.find_by(handle:"UenoZooGardens")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:32, attraction: Attraction.find_by(handle:"UenoZooGardens")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:5, attraction: Attraction.find_by(handle:"UenoZooGardens")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:26, attraction: Attraction.find_by(handle:"UenoZooGardens")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:4, attraction: Attraction.find_by(handle:"UenoZooGardens")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:12, attraction: Attraction.find_by(handle:"UenoZooGardens")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:12, attraction: Attraction.find_by(handle:"UenoZooGardens")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Astrology"), percentage:20, attraction: Attraction.find_by(handle:"USJ_Official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:11, attraction: Attraction.find_by(handle:"USJ_Official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:43, attraction: Attraction.find_by(handle:"USJ_Official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:29, attraction: Attraction.find_by(handle:"USJ_Official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:19, attraction: Attraction.find_by(handle:"USJ_Official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:32, attraction: Attraction.find_by(handle:"USJ_Official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:51, attraction: Attraction.find_by(handle:"USJ_Official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:13, attraction: Attraction.find_by(handle:"USJ_Official")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Traveling with kids"), percentage:7, attraction: Attraction.find_by(handle:"USJ_Official")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:7, attraction: Attraction.find_by(handle:"A_Corinthians")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:66, attraction: Attraction.find_by(handle:"A_Corinthians")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:11, attraction: Attraction.find_by(handle:"A_Corinthians")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:6, attraction: Attraction.find_by(handle:"A_Corinthians")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:5, attraction: Attraction.find_by(handle:"AllianzParque")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:62, attraction: Attraction.find_by(handle:"AllianzParque")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:5, attraction: Attraction.find_by(handle:"AllianzParque")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:6, attraction: Attraction.find_by(handle:"AllianzParque")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:6, attraction: Attraction.find_by(handle:"ambientesp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:46, attraction: Attraction.find_by(handle:"ambientesp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:14, attraction: Attraction.find_by(handle:"ambientesp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:6, attraction: Attraction.find_by(handle:"ambientesp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:13, attraction: Attraction.find_by(handle:"ambientesp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:12, attraction: Attraction.find_by(handle:"ambientesp")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:3, attraction: Attraction.find_by(handle:"audibira")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:8, attraction: Attraction.find_by(handle:"audibira")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:45, attraction: Attraction.find_by(handle:"audibira")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:8, attraction: Attraction.find_by(handle:"audibira")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:7, attraction: Attraction.find_by(handle:"audibira")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:8, attraction: Attraction.find_by(handle:"audibira")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:16, attraction: Attraction.find_by(handle:"audibira")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:9, attraction: Attraction.find_by(handle:"audibira")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:13, attraction: Attraction.find_by(handle:"audibira")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"South America"), percentage:4, attraction: Attraction.find_by(handle:"audibira")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:10, attraction: Attraction.find_by(handle:"audibira")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:6, attraction: Attraction.find_by(handle:"BSPbiblioteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:42, attraction: Attraction.find_by(handle:"BSPbiblioteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:5, attraction: Attraction.find_by(handle:"BSPbiblioteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:5, attraction: Attraction.find_by(handle:"BSPbiblioteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:5, attraction: Attraction.find_by(handle:"BSPbiblioteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:13, attraction: Attraction.find_by(handle:"BSPbiblioteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:9, attraction: Attraction.find_by(handle:"BSPbiblioteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:13, attraction: Attraction.find_by(handle:"BSPbiblioteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"South America"), percentage:5, attraction: Attraction.find_by(handle:"BSPbiblioteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:11, attraction: Attraction.find_by(handle:"BSPbiblioteca")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:3, attraction: Attraction.find_by(handle:"casadasrosas")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:6, attraction: Attraction.find_by(handle:"casadasrosas")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:44, attraction: Attraction.find_by(handle:"casadasrosas")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:7, attraction: Attraction.find_by(handle:"casadasrosas")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:6, attraction: Attraction.find_by(handle:"casadasrosas")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:7, attraction: Attraction.find_by(handle:"casadasrosas")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:14, attraction: Attraction.find_by(handle:"casadasrosas")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:9, attraction: Attraction.find_by(handle:"casadasrosas")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:13, attraction: Attraction.find_by(handle:"casadasrosas")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"South America"), percentage:3, attraction: Attraction.find_by(handle:"casadasrosas")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:10, attraction: Attraction.find_by(handle:"casadasrosas")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:14, attraction: Attraction.find_by(handle:"CCBB_SP")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:55, attraction: Attraction.find_by(handle:"CCBB_SP")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:4, attraction: Attraction.find_by(handle:"CCBB_SP")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:5, attraction: Attraction.find_by(handle:"CCBB_SP")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:25, attraction: Attraction.find_by(handle:"CCBB_SP")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:6, attraction: Attraction.find_by(handle:"CCBB_SP")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:9, attraction: Attraction.find_by(handle:"CCBB_SP")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:6, attraction: Attraction.find_by(handle:"CCBB_SP")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:9, attraction: Attraction.find_by(handle:"centrocultural")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:52, attraction: Attraction.find_by(handle:"centrocultural")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:3, attraction: Attraction.find_by(handle:"centrocultural")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:3, attraction: Attraction.find_by(handle:"centrocultural")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:3, attraction: Attraction.find_by(handle:"centrocultural")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:6, attraction: Attraction.find_by(handle:"centrocultural")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:6, attraction: Attraction.find_by(handle:"centrocultural")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:16, attraction: Attraction.find_by(handle:"centrocultural")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:8, attraction: Attraction.find_by(handle:"centrocultural")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:3, attraction: Attraction.find_by(handle:"cinesesc_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:7, attraction: Attraction.find_by(handle:"cinesesc_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:45, attraction: Attraction.find_by(handle:"cinesesc_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:8, attraction: Attraction.find_by(handle:"cinesesc_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:7, attraction: Attraction.find_by(handle:"cinesesc_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:8, attraction: Attraction.find_by(handle:"cinesesc_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:16, attraction: Attraction.find_by(handle:"cinesesc_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:9, attraction: Attraction.find_by(handle:"cinesesc_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:12, attraction: Attraction.find_by(handle:"cinesesc_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"South America"), percentage:4, attraction: Attraction.find_by(handle:"cinesesc_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:10, attraction: Attraction.find_by(handle:"cinesesc_sp")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:11, attraction: Attraction.find_by(handle:"galeriadorock")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:61, attraction: Attraction.find_by(handle:"galeriadorock")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:3, attraction: Attraction.find_by(handle:"galeriadorock")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Guitar"), percentage:23, attraction: Attraction.find_by(handle:"galeriadorock")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:3, attraction: Attraction.find_by(handle:"galeriadorock")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:23, attraction: Attraction.find_by(handle:"galeriadorock")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:5, attraction: Attraction.find_by(handle:"galeriadorock")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:8, attraction: Attraction.find_by(handle:"galeriadorock")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:5, attraction: Attraction.find_by(handle:"galeriadorock")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:3, attraction: Attraction.find_by(handle:"galeriadorock")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:4, attraction: Attraction.find_by(handle:"hablamemorial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:6, attraction: Attraction.find_by(handle:"hablamemorial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:39, attraction: Attraction.find_by(handle:"hablamemorial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:8, attraction: Attraction.find_by(handle:"hablamemorial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:9, attraction: Attraction.find_by(handle:"hablamemorial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:10, attraction: Attraction.find_by(handle:"hablamemorial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:17, attraction: Attraction.find_by(handle:"hablamemorial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:8, attraction: Attraction.find_by(handle:"hablamemorial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:14, attraction: Attraction.find_by(handle:"hablamemorial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"South America"), percentage:5, attraction: Attraction.find_by(handle:"hablamemorial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:11, attraction: Attraction.find_by(handle:"hablamemorial")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:4, attraction: Attraction.find_by(handle:"mamoficial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:6, attraction: Attraction.find_by(handle:"mamoficial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:44, attraction: Attraction.find_by(handle:"mamoficial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:8, attraction: Attraction.find_by(handle:"mamoficial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:8, attraction: Attraction.find_by(handle:"mamoficial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:7, attraction: Attraction.find_by(handle:"mamoficial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:10, attraction: Attraction.find_by(handle:"mamoficial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:7, attraction: Attraction.find_by(handle:"mamoficial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:15, attraction: Attraction.find_by(handle:"mamoficial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"South America"), percentage:4, attraction: Attraction.find_by(handle:"mamoficial")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:10, attraction: Attraction.find_by(handle:"mamoficial")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:9, attraction: Attraction.find_by(handle:"maspmuseu")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:53, attraction: Attraction.find_by(handle:"maspmuseu")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:5, attraction: Attraction.find_by(handle:"maspmuseu")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Modeling"), percentage:5, attraction: Attraction.find_by(handle:"maspmuseu")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:4, attraction: Attraction.find_by(handle:"maspmuseu")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:4, attraction: Attraction.find_by(handle:"maspmuseu")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:7, attraction: Attraction.find_by(handle:"maspmuseu")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:6, attraction: Attraction.find_by(handle:"maspmuseu")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:14, attraction: Attraction.find_by(handle:"maspmuseu")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:7, attraction: Attraction.find_by(handle:"maspmuseu")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:7, attraction: Attraction.find_by(handle:"mis_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:46, attraction: Attraction.find_by(handle:"mis_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:6, attraction: Attraction.find_by(handle:"mis_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:5, attraction: Attraction.find_by(handle:"mis_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:5, attraction: Attraction.find_by(handle:"mis_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:8, attraction: Attraction.find_by(handle:"mis_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:7, attraction: Attraction.find_by(handle:"mis_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:15, attraction: Attraction.find_by(handle:"mis_sp")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:9, attraction: Attraction.find_by(handle:"mis_sp")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:7, attraction: Attraction.find_by(handle:"museuafrobrasil")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:5, attraction: Attraction.find_by(handle:"museuafrobrasil")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:35, attraction: Attraction.find_by(handle:"museuafrobrasil")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:12, attraction: Attraction.find_by(handle:"museuafrobrasil")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Drawing/sketching"), percentage:3, attraction: Attraction.find_by(handle:"museuafrobrasil")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:14, attraction: Attraction.find_by(handle:"museuafrobrasil")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:13, attraction: Attraction.find_by(handle:"museuafrobrasil")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:18, attraction: Attraction.find_by(handle:"museuafrobrasil")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:7, attraction: Attraction.find_by(handle:"museuafrobrasil")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:12, attraction: Attraction.find_by(handle:"museuafrobrasil")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"South America"), percentage:5, attraction: Attraction.find_by(handle:"museuafrobrasil")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:13, attraction: Attraction.find_by(handle:"museuafrobrasil")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:5, attraction: Attraction.find_by(handle:"museudofutebol")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:46, attraction: Attraction.find_by(handle:"museudofutebol")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:4, attraction: Attraction.find_by(handle:"museudofutebol")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:5, attraction: Attraction.find_by(handle:"museudofutebol")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:4, attraction: Attraction.find_by(handle:"museudofutebol")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:17, attraction: Attraction.find_by(handle:"museudofutebol")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:6, attraction: Attraction.find_by(handle:"museudofutebol")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:10, attraction: Attraction.find_by(handle:"museudofutebol")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"South America"), percentage:3, attraction: Attraction.find_by(handle:"museudofutebol")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:10, attraction: Attraction.find_by(handle:"museudofutebol")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:5, attraction: Attraction.find_by(handle:"museupaulista")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:5, attraction: Attraction.find_by(handle:"museupaulista")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:37, attraction: Attraction.find_by(handle:"museupaulista")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:8, attraction: Attraction.find_by(handle:"museupaulista")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:9, attraction: Attraction.find_by(handle:"museupaulista")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:9, attraction: Attraction.find_by(handle:"museupaulista")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:16, attraction: Attraction.find_by(handle:"museupaulista")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:7, attraction: Attraction.find_by(handle:"museupaulista")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:13, attraction: Attraction.find_by(handle:"museupaulista")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"South America"), percentage:4, attraction: Attraction.find_by(handle:"museupaulista")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:12, attraction: Attraction.find_by(handle:"museupaulista")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:9, attraction: Attraction.find_by(handle:"MuseuPinacoteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:6, attraction: Attraction.find_by(handle:"MuseuPinacoteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:37, attraction: Attraction.find_by(handle:"MuseuPinacoteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:17, attraction: Attraction.find_by(handle:"MuseuPinacoteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Drawing/sketching"), percentage:4, attraction: Attraction.find_by(handle:"MuseuPinacoteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:16, attraction: Attraction.find_by(handle:"MuseuPinacoteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:16, attraction: Attraction.find_by(handle:"MuseuPinacoteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:22, attraction: Attraction.find_by(handle:"MuseuPinacoteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:10, attraction: Attraction.find_by(handle:"MuseuPinacoteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:11, attraction: Attraction.find_by(handle:"MuseuPinacoteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"South America"), percentage:5, attraction: Attraction.find_by(handle:"MuseuPinacoteca")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:12, attraction: Attraction.find_by(handle:"MuseuPinacoteca")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:3, attraction: Attraction.find_by(handle:"sescpompeia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:7, attraction: Attraction.find_by(handle:"sescpompeia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:50, attraction: Attraction.find_by(handle:"sescpompeia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:7, attraction: Attraction.find_by(handle:"sescpompeia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:6, attraction: Attraction.find_by(handle:"sescpompeia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:8, attraction: Attraction.find_by(handle:"sescpompeia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:19, attraction: Attraction.find_by(handle:"sescpompeia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:9, attraction: Attraction.find_by(handle:"sescpompeia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:12, attraction: Attraction.find_by(handle:"sescpompeia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"South America"), percentage:5, attraction: Attraction.find_by(handle:"sescpompeia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:9, attraction: Attraction.find_by(handle:"sescpompeia")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrities/gossip"), percentage:7, attraction: Attraction.find_by(handle:"usponline")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:49, attraction: Attraction.find_by(handle:"usponline")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:5, attraction: Attraction.find_by(handle:"usponline")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:3, attraction: Attraction.find_by(handle:"usponline")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:6, attraction: Attraction.find_by(handle:"usponline")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:11, attraction: Attraction.find_by(handle:"usponline")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:7, attraction: Attraction.find_by(handle:"usponline")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:4, attraction: Attraction.find_by(handle:"sydoperahouse")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrity/gossip"), percentage:11, attraction: Attraction.find_by(handle:"sydoperahouse")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:17, attraction: Attraction.find_by(handle:"sydoperahouse")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:3, attraction: Attraction.find_by(handle:"sydoperahouse")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:9, attraction: Attraction.find_by(handle:"sydoperahouse")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:6, attraction: Attraction.find_by(handle:"sydoperahouse")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:4, attraction: Attraction.find_by(handle:"sydoperahouse")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:5, attraction: Attraction.find_by(handle:"sydoperahouse")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:35, attraction: Attraction.find_by(handle:"ArtGalleryofNSW")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrity/gossip"), percentage:12, attraction: Attraction.find_by(handle:"ArtGalleryofNSW")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:14, attraction: Attraction.find_by(handle:"ArtGalleryofNSW")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Dance"), percentage:3, attraction: Attraction.find_by(handle:"ArtGalleryofNSW")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:27, attraction: Attraction.find_by(handle:"ArtGalleryofNSW")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Drawing/sketching"), percentage:15, attraction: Attraction.find_by(handle:"ArtGalleryofNSW")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:30, attraction: Attraction.find_by(handle:"ArtGalleryofNSW")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:37, attraction: Attraction.find_by(handle:"ArtGalleryofNSW")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:26, attraction: Attraction.find_by(handle:"ArtGalleryofNSW")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:3, attraction: Attraction.find_by(handle:"ArtGalleryofNSW")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:4, attraction: Attraction.find_by(handle:"ArtGalleryofNSW")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Adventure travel"), percentage:3, attraction: Attraction.find_by(handle:"ArtGalleryofNSW")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:4, attraction: Attraction.find_by(handle:"ArtGalleryofNSW")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Hotels"), percentage:3, attraction: Attraction.find_by(handle:"ArtGalleryofNSW")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:7, attraction: Attraction.find_by(handle:"ArtGalleryofNSW")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:20, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Boating"), percentage:10, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrity/gossip"), percentage:6, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:10, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:20, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Drawing/sketching"), percentage:6, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Genealogy"), percentage:8, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:23, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:26, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:25, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:5, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:3, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Adventure travel"), percentage:8, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:9, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Business travel"), percentage:5, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cruises"), percentage:4, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Europe"), percentage:6, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Hotels"), percentage:7, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Luxury travel"), percentage:8, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"National parks"), percentage:3, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:18, attraction: Attraction.find_by(handle:"anmmuseum")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrity/gossip"), percentage:13, attraction: Attraction.find_by(handle:"sydney_sider")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:19, attraction: Attraction.find_by(handle:"sydney_sider")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:7, attraction: Attraction.find_by(handle:"sydney_sider")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:7, attraction: Attraction.find_by(handle:"sydney_sider")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:5, attraction: Attraction.find_by(handle:"sydney_sider")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:19, attraction: Attraction.find_by(handle:"mca_australia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrity/gossip"), percentage:12, attraction: Attraction.find_by(handle:"mca_australia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:15, attraction: Attraction.find_by(handle:"mca_australia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:17, attraction: Attraction.find_by(handle:"mca_australia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Drawing/sketching"), percentage:5, attraction: Attraction.find_by(handle:"mca_australia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:16, attraction: Attraction.find_by(handle:"mca_australia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:25, attraction: Attraction.find_by(handle:"mca_australia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:16, attraction: Attraction.find_by(handle:"mca_australia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:4, attraction: Attraction.find_by(handle:"mca_australia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:4, attraction: Attraction.find_by(handle:"mca_australia")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:6, attraction: Attraction.find_by(handle:"mca_australia")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrity/gossip"), percentage:9, attraction: Attraction.find_by(handle:"scg")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:20, attraction: Attraction.find_by(handle:"scg")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Gambling"), percentage:3, attraction: Attraction.find_by(handle:"scg")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:4, attraction: Attraction.find_by(handle:"scg")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:4, attraction: Attraction.find_by(handle:"scg")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:19, attraction: Attraction.find_by(handle:"SydneyTheatreCo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrity/gossip"), percentage:19, attraction: Attraction.find_by(handle:"SydneyTheatreCo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:27, attraction: Attraction.find_by(handle:"SydneyTheatreCo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Dance"), percentage:13, attraction: Attraction.find_by(handle:"SydneyTheatreCo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:10, attraction: Attraction.find_by(handle:"SydneyTheatreCo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:10, attraction: Attraction.find_by(handle:"SydneyTheatreCo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:42, attraction: Attraction.find_by(handle:"SydneyTheatreCo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:9, attraction: Attraction.find_by(handle:"SydneyTheatreCo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:6, attraction: Attraction.find_by(handle:"SydneyTheatreCo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Screenwriting"), percentage:3, attraction: Attraction.find_by(handle:"SydneyTheatreCo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:4, attraction: Attraction.find_by(handle:"SydneyTheatreCo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:4, attraction: Attraction.find_by(handle:"SydneyTheatreCo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Hotels"), percentage:3, attraction: Attraction.find_by(handle:"SydneyTheatreCo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:6, attraction: Attraction.find_by(handle:"SydneyTheatreCo")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:4, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Birdwatching"), percentage:5, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrity/gossip"), percentage:22, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:21, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:4, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:3, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:7, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:16, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sci-fi/fantasy"), percentage:6, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:6, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Adventure travel"), percentage:9, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:9, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Business travel"), percentage:4, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Camping"), percentage:3, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Europe"), percentage:4, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Hotels"), percentage:6, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Luxury travel"), percentage:7, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"National parks"), percentage:6, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Theme parks"), percentage:5, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:13, attraction: Attraction.find_by(handle:"tarongazoo")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:7, attraction: Attraction.find_by(handle:"VividSydney")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrity/gossip"), percentage:13, attraction: Attraction.find_by(handle:"VividSydney")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:16, attraction: Attraction.find_by(handle:"VividSydney")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Design"), percentage:7, attraction: Attraction.find_by(handle:"VividSydney")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Painting"), percentage:4, attraction: Attraction.find_by(handle:"VividSydney")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:11, attraction: Attraction.find_by(handle:"VividSydney")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:9, attraction: Attraction.find_by(handle:"VividSydney")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Shopping"), percentage:4, attraction: Attraction.find_by(handle:"VividSydney")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:6, attraction: Attraction.find_by(handle:"VividSydney")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Hotels"), percentage:3, attraction: Attraction.find_by(handle:"VividSydney")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Luxury travel"), percentage:3, attraction: Attraction.find_by(handle:"VividSydney")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:6, attraction: Attraction.find_by(handle:"VividSydney")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Arts/crafts"), percentage:4, attraction: Attraction.find_by(handle:"sydney_festival")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrity/gossip"), percentage:9, attraction: Attraction.find_by(handle:"sydney_festival")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:16, attraction: Attraction.find_by(handle:"sydney_festival")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Performance arts"), percentage:9, attraction: Attraction.find_by(handle:"sydney_festival")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:7, attraction: Attraction.find_by(handle:"sydney_festival")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:3, attraction: Attraction.find_by(handle:"sydney_festival")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:4, attraction: Attraction.find_by(handle:"sydney_festival")).first_or_create
+
 
 print "DB loaded!\n"

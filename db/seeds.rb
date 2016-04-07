@@ -10,9 +10,36 @@ City.where(name: "London").first_or_create
 City.where(name: "Tokyo").first_or_create
 City.where(name: "Sao Paulo").first_or_create
 City.where(name: "Sydney").first_or_create
+City.where(name: "Bangalore").first_or_create
 
 
 print "Adding attractions...\n"
+
+# Attractions: Bangalore
+
+Attraction.where(name: "The Taj Mahal", handle: "TajMahal", user_id: "3307088970", centroid_lat: 27.174357, centroid_long: 78.041833, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Harmander Sahib", handle: "HarmanderSahib", user_id: "866601630", centroid_lat: 31.618912, centroid_long: 74.877001, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Bandra Worli Sealink", handle: "BandraWorliSea", user_id: "54523485", centroid_lat: 19.02969, centroid_long: 72.815897, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "National Museum of New Delhi", handle: "NMnewdelhi", user_id: "2396003209", centroid_lat: 28.611291, centroid_long: 77.218957, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Bengaluru Soccer Club", handle: "bengalurufc", user_id: "1563626983", centroid_lat: 12.9375714, centroid_long: 77.6107675, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Royal Challengers", handle: "RCBTweets", user_id: "70931004", centroid_lat: 12.9695813, centroid_long: 77.5920944, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Bengaluru Bulls Pro-Kabaddi", handle: "BengaluruBulls", user_id: "2586804044", centroid_lat: 12.9713168, centroid_long: 77.6055623, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Lysterta", handle: "taaqative", user_id: "46830061", centroid_lat: 12.9736377, centroid_long: 77.6032549, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Events Bangalore", handle: "EventsBangalore", user_id: "685853", centroid_lat: 12.98998, centroid_long: 77.59107, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Ramoji Film City", handle: "Ramoji_FilmCity", user_id: "1177863553", centroid_lat: 17.253962, centroid_long: 78.680842, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Bengaluru Airport", handle: "BLRAirport", user_id: "3274266002", centroid_lat: 13.203792, centroid_long: 77.707433, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "OperaLab", handle: "OperaLab", user_id: "17267421", centroid_lat: 13.00303, centroid_long: 77.6172, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Windmills Craftworks", handle: "Windmillscraft", user_id: "594481532", centroid_lat: 12.98305, centroid_long: 77.71983, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "The Biere Club", handle: "Thebiereclub", user_id: "343319454", centroid_lat: 12.970899, centroid_long: 77.597509, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "The Humming Tree", handle: "The_HummingTree", user_id: "1471557410", centroid_lat: 12.9736352, centroid_long: 77.6071027, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Snow City", handle: "snowcitybenglur", user_id: "", centroid_lat: 13.0062532, centroid_long: 77.5897621, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "ISKCON Sri Radha Krishna-Chandra Temple", handle: "ISKCONBangalore", user_id: "45507089", centroid_lat: 13.010449, centroid_long: 77.550802, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Visvesvaraya Industrial and Technological Museum", handle: "vismuseum", user_id: "3292581682", centroid_lat: 12.975049, centroid_long: 77.596334, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Art of Living International Center", handle: "BangaloreAshram", user_id: "140420416", centroid_lat: 12.825595, centroid_long: 77.508583, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Phoenix MarketCity", handle: "PMCBangalore", user_id: "392553274", centroid_lat: 12.996929, centroid_long: 77.696312, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Orion Mall", handle: "OrionMalls", user_id: "351757963", centroid_lat: 13.009842, centroid_long: 77.554791, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "BannerGhatta Zoo", handle: "bannerghattazoo", user_id: "2205115542", centroid_lat: 12.768169, centroid_long: 77.567257, city: City.find_by(name:"Bangalore")).first_or_create
+Attraction.where(name: "Pyramid Valley International", handle: "pyramidvalleyin", user_id: "794895230", centroid_lat: 12.696947, centroid_long: 77.494447, city: City.find_by(name:"Bangalore")).first_or_create
 
 # Attractions: Sydney
 

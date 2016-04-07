@@ -356,6 +356,17 @@ Interest.where(name: "Las Vegas").first_or_create
 Interest.where(name: "Hawaii").first_or_create
 Interest.where(name: "Luxury travel").first_or_create
 Interest.where(name: "Travel news").first_or_create
+Interest.where(name: "Bollywood").first_or_create
+Interest.where(name: "Technology/computing").first_or_create
+Interest.where(name: "Music/radio").first_or_create
+Interest.where(name: "Cricket").first_or_create
+Interest.where(name: "Soccer").first_or_create
+Interest.where(name: "Politics").first_or_create
+Interest.where(name: "Science").first_or_create
+Interest.where(name: "Sports news").first_or_create
+Interest.where(name: "Business/Technology").first_or_create
+Interest.where(name: "Business news").first_or_create
+Interest.where(name: "Books/literature").first_or_create
 
 # Attraction_audinece_interests: All
 print "Adding audience interest data...\n"
@@ -2100,5 +2111,44 @@ AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"),
 AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:3, attraction: Attraction.find_by(handle:"sydney_festival")).first_or_create
 AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:4, attraction: Attraction.find_by(handle:"sydney_festival")).first_or_create
 
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrity/gossip"), percentage:5, attraction: Attraction.find_by(handle:"BangaloreAshram")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:16, attraction: Attraction.find_by(handle:"BangaloreAshram")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:4, attraction: Attraction.find_by(handle:"BangaloreAshram")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Business/Technology"), percentage:53, attraction: Attraction.find_by(handle:"BangaloreAshram")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Bollywood"), percentage:74, attraction: Attraction.find_by(handle:"BangaloreAshram")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Music/radio"), percentage:55, attraction: Attraction.find_by(handle:"BangaloreAshram")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cricket"), percentage:56, attraction: Attraction.find_by(handle:"BangaloreAshram")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrity/gossip"), percentage:6, attraction: Attraction.find_by(handle:"TajMahal")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:17, attraction: Attraction.find_by(handle:"TajMahal")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:6, attraction: Attraction.find_by(handle:"TajMahal")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Air travel"), percentage:3, attraction: Attraction.find_by(handle:"TajMahal")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Travel news"), percentage:5, attraction: Attraction.find_by(handle:"TajMahal")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Politics"), percentage:53, attraction: Attraction.find_by(handle:"TajMahal")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Business/Technology"), percentage:58, attraction: Attraction.find_by(handle:"TajMahal")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Business news"), percentage:55, attraction: Attraction.find_by(handle:"TajMahal")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Science"), percentage:55, attraction: Attraction.find_by(handle:"TajMahal")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cricket"), percentage:62, attraction: Attraction.find_by(handle:"TajMahal")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrity/gossip"), percentage:7, attraction: Attraction.find_by(handle:"bengalurufc")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:17, attraction: Attraction.find_by(handle:"bengalurufc")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:3, attraction: Attraction.find_by(handle:"bengalurufc")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Books/literature"), percentage:70, attraction: Attraction.find_by(handle:"bengalurufc")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Bollywood"), percentage:73, attraction: Attraction.find_by(handle:"bengalurufc")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Cricket"), percentage:67, attraction: Attraction.find_by(handle:"bengalurufc")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Soccer"), percentage:56, attraction: Attraction.find_by(handle:"bengalurufc")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sports news"), percentage:69, attraction: Attraction.find_by(handle:"bengalurufc")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrity/gossip"), percentage:6, attraction: Attraction.find_by(handle:"BengaluruBulls")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:17, attraction: Attraction.find_by(handle:"BengaluruBulls")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Photography"), percentage:3, attraction: Attraction.find_by(handle:"BengaluruBulls")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Business/Technology"), percentage:53, attraction: Attraction.find_by(handle:"BengaluruBulls")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sports news"), percentage:63, attraction: Attraction.find_by(handle:"BengaluruBulls")).first_or_create
+
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Celebrity/gossip"), percentage:6, attraction: Attraction.find_by(handle:"RCBTweets")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Comedy"), percentage:11, attraction: Attraction.find_by(handle:"RCBTweets")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Books/literature"), percentage:61, attraction: Attraction.find_by(handle:"RCBTweets")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Sports news"), percentage:57, attraction: Attraction.find_by(handle:"RCBTweets")).first_or_create
+AttractionAudienceInterest.where(interest: Interest.find_by(name:"Technology/computing"), percentage:57, attraction: Attraction.find_by(handle:"RCBTweets")).first_or_create
 
 print "DB loaded!\n"
